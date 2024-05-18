@@ -284,8 +284,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wog-QB-XhE" kind="relationship" relationship="viewControllers" id="SMu-vo-opX"/>
-                        <segue destination="e82-hw-Zga" kind="relationship" relationship="viewControllers" id="Tni-LB-hjF"/>
+                        <segue destination="e82-hw-Zga" kind="relationship" relationship="viewControllers" id="0Lq-SF-K9G"/>
+                        <segue destination="wog-QB-XhE" kind="relationship" relationship="viewControllers" id="Clp-mH-09c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0KV-WD-hE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

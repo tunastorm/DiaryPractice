@@ -18,6 +18,7 @@
 		BC5DAC322BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC312BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift */; };
 		BC5DAC402BF8616100844D86 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */; };
 		BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC422BF878AE00844D86 /* AssetLoader.swift */; };
+		BC5DAC452BF8B07000844D86 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BC5DAC312BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		BC5DAC422BF878AE00844D86 /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
+		BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */,
+				BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				BC5DAC0F2BF7907E00844D86 /* AppDelegate.swift in Sources */,
 				BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */,
 				BC5DAC112BF7907E00844D86 /* SceneDelegate.swift in Sources */,
+				BC5DAC452BF8B07000844D86 /* NewWordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

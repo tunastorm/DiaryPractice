@@ -15,6 +15,7 @@ class EmotionViewController: UIViewController {
     @IBOutlet
     var emotionCountButtonCollection: [UIButton]!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,7 @@ class EmotionViewController: UIViewController {
         setDynamicContents()
        
     }
+    
     
     func setStaticContents() {
         self.navigationItem.title = "감정 다이어리"
@@ -37,7 +39,6 @@ class EmotionViewController: UIViewController {
         view.viewWithTag(2)?.backgroundColor = UIColor.clear
         view.viewWithTag(3)?.backgroundColor = UIColor.clear
         view.viewWithTag(4)?.backgroundColor = UIColor.clear
-        
     }
     
     func setDynamicContents() {
@@ -81,6 +82,10 @@ class EmotionViewController: UIViewController {
     }
     
     func setButtonContents() -> [String:String] {
+        let assetDirPath = "/Users/ucheol/dev/SeSAC/assignment/DiaryPractice/DiaryPractice/Assets.xcassets"
+        var assetLoader: AssetLoader = AssetLoader(directoryPath: assetDirPath)
+        var neededAssets: [String] = assetLoader.getAssetNames(contains: "slime")
+        
         var buttonContents: [String : String] = [
             // emotion : image file
             "행복해":"",
@@ -94,13 +99,7 @@ class EmotionViewController: UIViewController {
             "울적해":""
         ]
         
-        let assetDirPath = "/Users/ucheol/dev/SeSAC/assignment/DiaryPractice/DiaryPractice/Assets.xcassets"
-        
-        var assetLoader: AssetLoader = AssetLoader(directoryPath: assetDirPath)
-        var allAssets: [String] = assetLoader.getAssetNames(contains: "slime")
-        // var buttonKeys: [String] = buttonContents.keys.sorted()
-        
-        for asset in allAssets {
+        for asset in neededAssets {
             switch asset {
                 case "slime1": buttonContents["행복해"] = asset
                 case "slime2": buttonContents["사랑해"] = asset
@@ -118,6 +117,7 @@ class EmotionViewController: UIViewController {
         return buttonContents
     }
     
+    
     @IBAction
     func emotionButtonPushUp(_ sender: UIButton) {
         // push up 이벤트 발생한 버튼의 title을 가져옴
@@ -128,16 +128,20 @@ class EmotionViewController: UIViewController {
         var newTitle: String = "none"
         var oldCount: Int = 0
         
-        if senderTitle == "none" || emotion == "none"{
+        if senderTitle == "none" || emotion == "none" {
             return
         }
         
         // 기존에 카운트된 경우와 아닌 경우로 분기해 NewTitle 지정
-        if oldTitle.count == 1{
+        if oldTitle.count == 1{ // 최초 카운트
+            
             newTitle = "\(emotion) 1"
-        } else if oldTitle.count == 2 {
+            
+        } else if oldTitle.count == 2 { // 기존 카운트 + 1
+            
             oldCount = Int(String(oldTitle.last ?? "-1")) ?? -1
             let newCount = oldCount + 1
+            
             newTitle = "\(emotion) \(newCount)"
         }
         
@@ -149,6 +153,7 @@ class EmotionViewController: UIViewController {
         for countButton in emotionCountButtonCollection {
             if countButton.title(for: .normal) == senderTitle {
                 countButton.setTitle(newTitle, for: .normal)
+                break
             }
         }
         
@@ -156,6 +161,7 @@ class EmotionViewController: UIViewController {
         for emotionImageButton in emotionImageButtonCollection {
             if emotionImageButton.title(for: .normal) == senderTitle {
                 emotionImageButton.setTitle(newTitle, for: .normal)
+                break
             }
         }
         
