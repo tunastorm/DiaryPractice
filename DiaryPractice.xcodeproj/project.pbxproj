@@ -16,6 +16,8 @@
 		BC5DAC262BF7907F00844D86 /* DiaryPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC252BF7907F00844D86 /* DiaryPracticeTests.swift */; };
 		BC5DAC302BF7907F00844D86 /* DiaryPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC2F2BF7907F00844D86 /* DiaryPracticeUITests.swift */; };
 		BC5DAC322BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC312BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift */; };
+		BC5DAC402BF8616100844D86 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */; };
+		BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC422BF878AE00844D86 /* AssetLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BC5DAC2B2BF7907F00844D86 /* DiaryPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5DAC2F2BF7907F00844D86 /* DiaryPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPracticeUITests.swift; sourceTree = "<group>"; };
 		BC5DAC312BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		BC5DAC422BF878AE00844D86 /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		BC5DAC0D2BF7907E00844D86 /* DiaryPractice */ = {
 			isa = PBXGroup;
 			children = (
+				BC5DAC412BF8787500844D86 /* Common */,
+				BC5DAC3E2BF791EA00844D86 /* Contoller */,
 				BC5DAC0E2BF7907E00844D86 /* AppDelegate.swift */,
 				BC5DAC102BF7907E00844D86 /* SceneDelegate.swift */,
 				BC5DAC122BF7907E00844D86 /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				BC5DAC312BF7907F00844D86 /* DiaryPracticeUITestsLaunchTests.swift */,
 			);
 			path = DiaryPracticeUITests;
+			sourceTree = "<group>";
+		};
+		BC5DAC3E2BF791EA00844D86 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		BC5DAC412BF8787500844D86 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DAC422BF878AE00844D86 /* AssetLoader.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5DAC402BF8616100844D86 /* EmotionViewController.swift in Sources */,
 				BC5DAC132BF7907E00844D86 /* ViewController.swift in Sources */,
 				BC5DAC0F2BF7907E00844D86 /* AppDelegate.swift in Sources */,
+				BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */,
 				BC5DAC112BF7907E00844D86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,8 +471,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +481,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tunastorm.DiaryPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,8 +503,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,9 +513,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tunastorm.DiaryPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
