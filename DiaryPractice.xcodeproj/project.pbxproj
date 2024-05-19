@@ -19,6 +19,8 @@
 		BC5DAC402BF8616100844D86 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */; };
 		BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC422BF878AE00844D86 /* AssetLoader.swift */; };
 		BC5DAC452BF8B07000844D86 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */; };
+		BCB756A52BFA0B7D00541FC3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756A42BFA0B7D00541FC3 /* TabBarViewController.swift */; };
+		BCB756A72BFA143B00541FC3 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756A62BFA143B00541FC3 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		BC5DAC422BF878AE00844D86 /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
 		BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
+		BCB756A42BFA0B7D00541FC3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BCB756A62BFA143B00541FC3 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			children = (
 				BC5DAC3F2BF8616100844D86 /* EmotionViewController.swift */,
 				BC5DAC442BF8B07000844D86 /* NewWordViewController.swift */,
+				BCB756A42BFA0B7D00541FC3 /* TabBarViewController.swift */,
+				BCB756A62BFA143B00541FC3 /* LaunchScreenViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -285,8 +291,10 @@
 			files = (
 				BC5DAC402BF8616100844D86 /* EmotionViewController.swift in Sources */,
 				BC5DAC132BF7907E00844D86 /* ViewController.swift in Sources */,
+				BCB756A72BFA143B00541FC3 /* LaunchScreenViewController.swift in Sources */,
 				BC5DAC0F2BF7907E00844D86 /* AppDelegate.swift in Sources */,
 				BC5DAC432BF878AE00844D86 /* AssetLoader.swift in Sources */,
+				BCB756A52BFA0B7D00541FC3 /* TabBarViewController.swift in Sources */,
 				BC5DAC112BF7907E00844D86 /* SceneDelegate.swift in Sources */,
 				BC5DAC452BF8B07000844D86 /* NewWordViewController.swift in Sources */,
 			);
