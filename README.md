@@ -31,5 +31,5 @@ tunastorm
 
 > UI 이미지
 
-<img src="https://github.com/tunastorm/DiaryPractice/blob/tunastorm/EmotionDiary_UI.png"  width="900" height="600"/>
+<img src="https://github.com/tunastorm/DiaryPractice/blob/tunastorm/EmotionDiary_UI.png"  width="800" height="550"/>
    
