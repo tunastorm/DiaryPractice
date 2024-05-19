@@ -68,6 +68,11 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
     func setNewWordSearchTextFieldUI() {
         newWordSearchTextField.borderStyle = .line
         newWordSearchTextField.layer.borderWidth = 2
+        var padding = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 0.0))
+        newWordSearchTextField.leftView = padding
+        newWordSearchTextField.rightView = padding
+        newWordSearchTextField.leftViewMode = .always
+        newWordSearchTextField.rightViewMode = .always
     }
     
     func setNewWordSearchButtonUI() {
