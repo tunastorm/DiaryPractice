@@ -32,7 +32,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za8-rx-AS2"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNW-9n-A87"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-Vo-0qN">
@@ -41,7 +41,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQH-Iv-4jh"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="he2-bc-Ya7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjs-Kd-HTr">
@@ -50,7 +50,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldm-Es-wcj"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8SL-te-g3z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-dQ-JGB">
@@ -59,7 +59,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xt-Co-sdq"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Vc-Ob-Zef"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df5-gq-SNe">
@@ -68,7 +68,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T38-3y-IhS"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pto-nL-1UE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOI-mr-dK1">
@@ -77,7 +77,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faj-UB-Cc1"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n38-IG-bcp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -93,7 +93,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8h-0E-OHo"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmY-Oi-Dex"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbu-qp-E2t">
@@ -102,7 +102,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGK-pY-Mpd"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iLg-ko-XGn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-sx-L4l">
@@ -111,7 +111,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8Z-Pu-wAW"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8up-Wy-t9W"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFW-ua-7Zx">
@@ -120,7 +120,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmY-QI-8HI"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gan-1N-ccC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWk-Ll-Vur">
@@ -129,7 +129,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DES-4t-SxB"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTN-2Z-JDx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r22-Sg-e2J">
@@ -138,7 +138,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enk-6e-ki0"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKi-Qo-1xk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -154,7 +154,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHh-8x-lSV"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcZ-N7-ni2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-Ps-a0N">
@@ -163,7 +163,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vf5-Es-Pao"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqK-MV-6eb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsM-Q5-O4i">
@@ -172,7 +172,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHK-1X-8uN"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djn-0U-dYG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG3-oN-uMK">
@@ -181,7 +181,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYm-iU-u6e"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBW-bW-CjR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAC-sH-PBw">
@@ -190,7 +190,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k32-ee-md0"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWu-kd-0Il"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj2-Q2-8s0">
@@ -199,7 +199,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="emotionButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gI-dg-3Li"/>
+                                                    <action selector="emotionButtonsPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncC-UM-1Ef"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -260,26 +260,117 @@
         <!--Item-->
         <scene sceneID="X4x-bD-aAE">
             <objects>
-                <viewController id="uyn-MQ-azW" sceneMemberID="viewController">
+                <viewController id="uyn-MQ-azW" customClass="NewWordViewController" customModule="DiaryPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dcB-Lw-zHx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-T9-nHC">
+                                <rect key="frame" x="319" y="113" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="newWordSearchButtonPushUp:" destination="uyn-MQ-azW" eventType="touchUpInside" id="G0b-GA-h1Z"/>
+                                </connections>
+                            </button>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meZ-cp-2D0">
+                                <rect key="frame" x="27" y="337" width="337" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFd-yO-pFI">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3k-8c-fmo">
+                                        <rect key="frame" x="18" y="10" width="300" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-Hs-CoD">
+                                <rect key="frame" x="27" y="166" width="337" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQP-Bx-Cca">
+                                        <rect key="frame" x="8" y="5" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="newWordButtonsPushUp:" destination="uyn-MQ-azW" eventType="touchUpInside" id="Rss-fw-BZu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-f9-HR2">
+                                        <rect key="frame" x="76" y="5" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="newWordButtonsPushUp:" destination="uyn-MQ-azW" eventType="touchUpInside" id="gsX-nE-gzd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iL-U5-lQf">
+                                        <rect key="frame" x="144" y="5" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="newWordButtonsPushUp:" destination="uyn-MQ-azW" eventType="touchUpInside" id="zNx-Rl-tuV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dho-Q8-G7t">
+                                        <rect key="frame" x="212" y="5" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="newWordButtonsPushUp:" destination="uyn-MQ-azW" eventType="touchUpInside" id="Ypm-ec-cpE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5O2-rN-gZi">
+                                <rect key="frame" x="27" y="113" width="293" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gl6-Ci-LLA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Rn6-vr-zdT"/>
                     <navigationItem key="navigationItem" id="eyv-fZ-0T0"/>
+                    <connections>
+                        <outlet property="newWordDescImageView" destination="lFd-yO-pFI" id="yhr-rU-oYx"/>
+                        <outlet property="newWordDescLabel" destination="A3k-8c-fmo" id="3C3-pc-jRb"/>
+                        <outlet property="newWordSearchButton" destination="7jH-T9-nHC" id="s8c-VZ-AgH"/>
+                        <outlet property="newWordSearchTextField" destination="5O2-rN-gZi" id="4v3-pL-EeF"/>
+                        <outletCollection property="newWordButtonCollections" destination="yQP-Bx-Cca" collectionClass="NSMutableArray" id="Mz2-5U-zbp"/>
+                        <outletCollection property="newWordButtonCollections" destination="NEz-f9-HR2" collectionClass="NSMutableArray" id="xYv-TI-hFl"/>
+                        <outletCollection property="newWordButtonCollections" destination="3iL-U5-lQf" collectionClass="NSMutableArray" id="j6z-Pe-ASA"/>
+                        <outletCollection property="newWordButtonCollections" destination="Dho-Q8-G7t" collectionClass="NSMutableArray" id="fSr-VW-Ijk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2YY-Ab-yA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2050" y="435"/>
+            <point key="canvasLocation" x="2049.6183206106871" y="434.50704225352115"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="a7y-8h-xo5">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rn5-WC-Kx6" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rn5-WC-Kx6" customClass="TabBarViewController" customModule="DiaryPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pqD-1p-y6c">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -296,7 +387,7 @@
         <scene sceneID="hFl-gZ-nbu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wog-QB-XhE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LcI-eH-gdJ"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Item" id="LcI-eH-gdJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ktb-8x-dFS">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
