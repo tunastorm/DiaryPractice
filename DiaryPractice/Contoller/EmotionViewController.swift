@@ -77,7 +77,8 @@ class EmotionViewController: UIViewController {
             emotionImageButton.setTitleColor(.clear, for: .normal)
                     
             if let emotionImage = contents[emotion] {
-                emotionImageButton.setBackgroundImage(UIImage(named:emotionImage)?.withRenderingMode(.alwaysOriginal), for: .normal)
+                emotionImageButton.setBackgroundImage(UIImage(named:emotionImage)?
+                                                      .withRenderingMode(.alwaysOriginal), for: .normal)
             }
             
         }
@@ -124,15 +125,16 @@ class EmotionViewController: UIViewController {
     
     @IBAction
     func emotionButtonsPushUp(_ sender: UIButton) {
-        // push up 이벤트 발생한 버튼의 title을 가져옴
-        var senderTitle: String = sender.title(for: .normal) ?? "none"
+        // push up 이벤트 발생한 버튼의 title 문자열 추출
+        var senderTitle: String = sender.title(for: .normal) ?? "nil"
         
         let oldTitle = senderTitle.split(separator: " ")
-        let emotion = String(oldTitle.first ?? "none")
-        var newTitle: String = "none"
+        let emotion = String(oldTitle.first ?? "nil")
+        var newTitle: String = "nil"
         var oldCount: Int = 0
         
-        if senderTitle == "none" || emotion == "none" {
+        // sender의 title 값이 없을 경우 예외처리
+        if senderTitle == "nil" || emotion == "nil" {
             return
         }
         
@@ -146,7 +148,8 @@ class EmotionViewController: UIViewController {
             newTitle = "\(emotion) 1"
         }
         
-        if newTitle == "none" || oldCount < 0 {
+        // newTitle 설정 실패시 예외처리
+        if newTitle == "nil" || oldCount < 0 {
             return
         }
         

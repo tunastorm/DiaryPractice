@@ -33,7 +33,6 @@ class TabBarViewController: UITabBarController {
                 let name =  nameList[idx]
                 item.title = name
                 item.image = UIImage(systemName: itemNames[name]!)?.withRenderingMode(.alwaysOriginal)
-                
             }
         }
     }

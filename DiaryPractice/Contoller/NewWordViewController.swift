@@ -56,7 +56,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setDynamicContents () {
-        setNewWordButtons()
+        setNewWordButtonIterator()
         setTabGestureHideKeyboard()
     }
     
@@ -101,7 +101,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func setNewWordButtons () {
+    func setNewWordButtonIterator () {
         
         var randomWords: [String] = []
         
@@ -113,21 +113,26 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
         }
         
         for (idx, newWordButton) in newWordButtonCollections.enumerated() {
-            let wordLength: Double = Double(randomWords[idx].count)
-            
-            newWordButton.configuration = .none
-            newWordButton.layer.frame.size = CGSize(width: (wordLength * 10)+10,
-                                                    height: newWordButton.frame.height)
-            newWordButton.titleLabel?.textAlignment = .center
-            newWordButton.titleLabel?.font = .systemFont(ofSize: 12)
-            newWordButton.setTitle(randomWords[idx], for: .normal)
-            
-            newWordButton.layer.cornerRadius = newWordButton.frame.height * 0.1
-            newWordButton.layer.borderWidth = 1
-            newWordButton.layer.borderColor = UIColor.black.cgColor
+            let newWord = randomWords[idx]
+            let wordLength: Int = newWord.count
+            setNewWordButton(newWordButton, newWord, wordLength)
         }
         
     }
+    
+    func setNewWordButton(_ newWordButton: UIButton, _ newWord: String, _ wordLength: Int) {
+        newWordButton.configuration = .none
+        newWordButton.layer.frame.size = CGSize(width: Double(wordLength * 10) + 10.0,
+                                                height: newWordButton.frame.height)
+        newWordButton.titleLabel?.textAlignment = .center
+        newWordButton.titleLabel?.font = .systemFont(ofSize: 12)
+        newWordButton.setTitle(newWord, for: .normal)
+        
+        newWordButton.layer.cornerRadius = newWordButton.frame.height * 0.1
+        newWordButton.layer.borderWidth = 1
+        newWordButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
     
     func setTabGestureHideKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
