@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.borderColor = UIColor.black.cgColor
         
-        var itemNames: [String:String] = [
+        let itemNames: [String:String] = [
             "감정 다이어리": "heart.text.square",
             "신조어 찾기": "magnifyingglass"
         ]
@@ -30,7 +30,7 @@ class TabBarViewController: UITabBarController {
         
         if let itemList = tabBar.items?.enumerated() {
             for (idx, item) in itemList {
-                var name =  nameList[idx]
+                let name =  nameList[idx]
                 item.title = name
                 item.image = UIImage(systemName: itemNames[name]!)?.withRenderingMode(.alwaysOriginal)
                 

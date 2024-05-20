@@ -68,7 +68,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
     func setNewWordSearchTextFieldUI() {
         newWordSearchTextField.borderStyle = .line
         newWordSearchTextField.layer.borderWidth = 2
-        var padding = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 0.0))
+        let padding = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 0.0))
         newWordSearchTextField.leftView = padding
         newWordSearchTextField.rightView = padding
         newWordSearchTextField.leftViewMode = .always
@@ -81,6 +81,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
                                                    height: newWordSearchButton.frame.height)
         newWordSearchButton.backgroundColor = .black
         newWordSearchButton.tintColor = .white
+        
         if let image = UIImage(systemName: "magnifyingglass") {
             newWordSearchButton.setImage(image.resizableImage(withCapInsets: .init(), resizingMode: .tile), for: .normal)
             newWordSearchButton.imageView?.contentMode = .scaleAspectFit
@@ -112,7 +113,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
         }
         
         for (idx, newWordButton) in newWordButtonCollections.enumerated() {
-            var wordLength: Double = Double(randomWords[idx].count)
+            let wordLength: Double = Double(randomWords[idx].count)
             
             newWordButton.configuration = .none
             newWordButton.layer.frame.size = CGSize(width: (wordLength * 10)+10,
