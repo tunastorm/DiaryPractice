@@ -122,8 +122,12 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
     
     func setNewWordButton(_ newWordButton: UIButton, _ newWord: String, _ wordLength: Int) {
         newWordButton.configuration = .none
-        newWordButton.layer.frame.size = CGSize(width: Double(wordLength * 10) + 10.0,
-                                                height: newWordButton.frame.height)
+        newWordButton.translatesAutoresizingMaskIntoConstraints = false
+        newWordButton.titleEdgeInsets = UIEdgeInsets(top: 3.0, left: 3.0, bottom: 3.0, right: 3.0)
+        newWordButton.widthAnchor.constraint(equalToConstant: Double(wordLength * 10) + 10.0).isActive = true
+//      <frame based Layout>
+//        newWordButton.layer.frame.size = CGSize(width: Double(wordLength * 20) + 10.0,
+//                                                height: newWordButton.frame.height)
         newWordButton.titleLabel?.textAlignment = .center
         newWordButton.titleLabel?.font = .systemFont(ofSize: 12)
         newWordButton.setTitle(newWord, for: .normal)
