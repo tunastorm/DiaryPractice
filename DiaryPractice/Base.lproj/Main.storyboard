@@ -343,16 +343,33 @@
                                     <constraint firstItem="tU5-r1-PZK" firstAttribute="width" secondItem="STF-pN-3q7" secondAttribute="width" multiplier="1.00106" id="zd3-Pe-CDT"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc2-Rd-Ptr">
+                                <rect key="frame" x="39" y="620.33333333333337" width="315" height="35"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonPushUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mW-GR-WO9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Lc2-Rd-Ptr" firstAttribute="top" secondItem="STF-pN-3q7" secondAttribute="bottom" constant="30" id="0nc-ah-KK8"/>
                             <constraint firstItem="STF-pN-3q7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ddc-rC-ldw"/>
+                            <constraint firstItem="Lc2-Rd-Ptr" firstAttribute="width" secondItem="STF-pN-3q7" secondAttribute="width" multiplier="0.997888" id="J02-hU-n4l"/>
                             <constraint firstItem="STF-pN-3q7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hn4-bD-3f4"/>
+                            <constraint firstItem="Lc2-Rd-Ptr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qYP-pB-gLG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IfX-gs-hk4"/>
                     <connections>
+                        <outlet property="resetButton" destination="Lc2-Rd-Ptr" id="6UB-1t-JvI"/>
                         <outletCollection property="emotionCountButtonCollection" destination="wOq-Vo-0qN" collectionClass="NSMutableArray" id="tkh-7Y-DUw"/>
                         <outletCollection property="emotionCountButtonCollection" destination="qjs-Kd-HTr" collectionClass="NSMutableArray" id="YcR-8a-aFm"/>
                         <outletCollection property="emotionCountButtonCollection" destination="YOI-mr-dK1" collectionClass="NSMutableArray" id="bDx-jK-BR3"/>

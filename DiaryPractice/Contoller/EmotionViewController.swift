@@ -15,6 +15,7 @@ class EmotionViewController: UIViewController {
     @IBOutlet
     var emotionCountButtonCollection: [UIButton]!
     
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class EmotionViewController: UIViewController {
     func setDynamicContents() {
         var buttonContents: [String:String] = setButtonContents()
         setButtonsEmotion(contents: buttonContents)
+        
     }
     
     func setViewContainerUI() {
@@ -65,7 +67,14 @@ class EmotionViewController: UIViewController {
             
             emotionCountButton.configuration = .none
             emotionCountButton.titleLabel?.font = .systemFont(ofSize: 12)
-            emotionCountButton.setTitle("\(emotion)", for: .normal)
+            
+            let lastCount = UserDefaults.standard.integer(forKey: "\(emotion)")
+            
+            var emotionTitle = "\(emotion)"
+            if lastCount > 0 {
+                emotionTitle = "\(emotion) \(lastCount)"
+            }
+            emotionCountButton.setTitle("\(emotionTitle)", for: .normal)
         }
         
         for (idx, emotionImageButton) in emotionImageButtonCollection.enumerated() {
@@ -73,8 +82,15 @@ class EmotionViewController: UIViewController {
             let emotion: String = emotions[idx]
             
             emotionImageButton.configuration = .none
-            emotionImageButton.setTitle(emotion, for: .normal)
             emotionImageButton.setTitleColor(.clear, for: .normal)
+            
+            let lastCount = UserDefaults.standard.integer(forKey: "\(emotion)")
+            
+            var emotionTitle = "\(emotion)"
+            if lastCount > 0 {
+                emotionTitle = "\(emotion) \(lastCount)"
+            }
+            emotionImageButton.setTitle("\(emotionTitle)", for: .normal)
                     
             if let emotionImage = contents[emotion] {
                 emotionImageButton.setBackgroundImage(UIImage(named:emotionImage)?
@@ -132,6 +148,7 @@ class EmotionViewController: UIViewController {
         let emotion = String(oldTitle.first ?? "nil")
         var newTitle: String = "nil"
         var oldCount: Int = 0
+        var newCount: Int = 0
         
         // sender의 title 값이 없을 경우 예외처리
         if senderTitle == "nil" || emotion == "nil" {
@@ -141,17 +158,24 @@ class EmotionViewController: UIViewController {
         // 기존에 카운트된 경우와 아닌 경우로 분기해 NewTitle 지정
         if oldTitle.count == 2 { // 기존 카운트 + 1
             oldCount = Int(String(oldTitle.last ?? "-1")) ?? -1
-            let newCount = oldCount + 1
-            newTitle = "\(emotion) \(newCount)"
-            
-        } else if oldTitle.count == 1 { // 최초 카운트
-            newTitle = "\(emotion) 1"
+            newCount = oldCount + 1
+            UserDefaults.standard.set(newCount, forKey: "\(emotion)")
+        
+        } else if oldTitle.count == 1 {   // 최초 카운트
+            newCount = 1
         }
         
-        // newTitle 설정 실패시 예외처리
-        if newTitle == "nil" || oldCount < 0 {
+        // count 저장
+        UserDefaults.standard.set(newCount, forKey: "\(emotion)")
+        
+        // count 저장 실패시 예외처리
+        let lastCount = UserDefaults.standard.integer(forKey: "\(emotion)")
+                
+        if  lastCount == 0 {
             return
         }
+        
+        newTitle = "\(emotion) \(lastCount)"
         
         // emotionCountButton 순회하여 title이 일치하는 것에 newTitle 적용
         for countButton in emotionCountButtonCollection {
@@ -169,5 +193,26 @@ class EmotionViewController: UIViewController {
             }
         }
         
+    }
+    
+    @IBAction func resetButtonPushUp(_ sender: UIButton) {
+    
+        for countButton in emotionCountButtonCollection {
+            guard let emotion = countButton.title(for: .normal) else {
+                return
+            }
+            UserDefaults.standard.set(0, forKey: "\(emotion)")
+            let newTitle = emotion.split(separator: " ")[0]
+            
+            countButton.setTitle("\(newTitle)", for: .normal)
+        }
+        
+        for emotionImageButton in emotionImageButtonCollection {
+            guard let emotion = emotionImageButton.title(for: .normal) else {
+                return
+            }
+            let newTitle = emotion.split(separator: " ")[0]
+            emotionImageButton.setTitle("\(newTitle)", for: .normal)
+        }
     }
 }

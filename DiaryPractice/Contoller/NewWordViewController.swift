@@ -58,6 +58,7 @@ class NewWordViewController: UIViewController, UITextFieldDelegate {
     func setDynamicContents () {
         setNewWordButtonIterator()
         setTabGestureHideKeyboard()
+        
     }
     
     func setViewsUI() {
